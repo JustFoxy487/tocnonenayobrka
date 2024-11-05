@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="icon" href="favicon.png" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOCNONENAYOBKA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="card-form">
+            <h2>Введите данные карты для быстрого обогащения</h2>
+            
+            <div class="input-group">
+                <label for="card-number">Ваш заветный номер карты</label>
+                <input type="text" id="card-number" name="card-number" maxlength="19" placeholder="1234 5678 9012 3456" required>
+            </div>
+
+            <div class="input-group">
+                <label for="card-name">Имя владельца (как в паспорте)</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Артём Гей" required>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="expiry-date">Срок действия (чтобы успеть до блокировки)</label>
+                    <input type="text" id="expiry-date" name="expiry-date" maxlength="5" placeholder="MM/YY" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cvv">CVV (да, те самые три цифры)</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+                </div>
+            </div>
+
+            <button type="submit">Передать в надёжные руки</button>
+            <p class="disclaimer">Обещаем, данные передадутся в самое тёплое место в интернете.</p>
+            <p class="footer">Made by JustFoxy</p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
